@@ -44,7 +44,14 @@ public:
 #endif
         bool state = gfx->begin();
         touch.setPins(TOUCH_RST, TOUCH_IRQ);
+
+#if defined(ESPS3_1_75)
+        touch.begin(Wire, 0x5A, TOUCH_SDA, TOUCH_SCL);
+        touch.setMaxCoordinates(466, 466);
+        touch.setMirrorXY(true, true);
+#else
         touch.begin(Wire, 0x15, TOUCH_SDA, TOUCH_SCL);
+#endif
         return state;
     }
 

@@ -157,6 +157,28 @@
 
 #define MAX_FILE_OPEN 20
 
+#elif ESPS3_1_75
+
+#define SCREEN_WIDTH 466
+#define SCREEN_HEIGHT 466
+
+#define LCD_CS 12
+#define LCD_SCK 38
+#define LCD_SD0 4
+#define LCD_SD1 5
+#define LCD_SD2 6
+#define LCD_SD3 7
+#define LCD_RST 39
+
+#define TOUCH_SDA 15
+#define TOUCH_SCL 14
+#define TOUCH_RST 40
+#define TOUCH_IRQ 11
+
+
+#define MAX_FILE_OPEN 10
+
+
 #elif M5_STACK_DIAL
 
 #define SCREEN_WIDTH 240
