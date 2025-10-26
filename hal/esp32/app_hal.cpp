@@ -1723,8 +1723,8 @@ int putchar(int ch)
 
 void loadSplash()
 {
-  int w = 400;
-  int h = 286;
+  int w = 122;
+  int h = 130;
   int x = (SCREEN_WIDTH - w) / 2;
   int y = (SCREEN_HEIGHT - h) / 2;
   tft.fillScreen(TFT_BLACK);
