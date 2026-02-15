@@ -126,36 +126,34 @@
 
 #define MAX_FILE_OPEN 50
 
-#elif ESPS3_1_69
+#elif ESPS3_2_06
 
-// screen configs
+#define SCREEN_WIDTH 410
+#define SCREEN_HEIGHT 502
+
+#define LCD_CS 12
+#define LCD_SCK 11
+#define LCD_SD0 4
+#define LCD_SD1 5
+#define LCD_SD2 6
+#define LCD_SD3 7
+#define LCD_RST 8
+
+#define TOUCH_SDA 15
+#define TOUCH_SCL 14
+#define TOUCH_RST 9
+#define TOUCH_IRQ 38
+
+#define MAX_FILE_OPEN 10
+
+#elif M5_STACK_DIAL
+
 #define SCREEN_WIDTH 240
-#define SCREEN_HEIGHT 280
-#define OFFSET_X 0
-#define OFFSET_Y 20
-#define RGB_ORDER true
+#define SCREEN_HEIGHT 240
 
-// touch
-#define I2C_SDA 11
-#define I2C_SCL 10
-#define TP_INT 14
-#define TP_RST 13
+#define BUZZER_PIN 3
 
-// display
-#define SPI SPI2_HOST
-
-#define SCLK 6
-#define MOSI 7
-#define MISO -1
-#define DC 4
-#define CS 5
-#define RST 8
-
-#define BL 15
-
-#define BUZZER_PIN -1 //33
-
-#define MAX_FILE_OPEN 20
+#define MAX_FILE_OPEN 10
 
 #elif ESPS3_1_75
 
